@@ -90,9 +90,17 @@ function start(){
 
 start();
 
-const btn1 = document.createElement('button');
-const btn2 = document.createElement('button');
-const btn3 = document.createElement('button');
+const btn1 = document.getElementById('rockbtn');
+const btn2 = document.getElementById('paperbtn');
+const btn3 = document.getElementById('scissorsbtn');
+
+let playerChoices = document.querySelectorAll("button");
+
+playerChoices.addEventListener('click', e => {
+    if (e=== btn1){
+        
+    }
+})
 
 btn1.addEventListener('click', () => {
     playRound(playerSelection, computerSelection);
@@ -106,3 +114,5 @@ btn3.addEventListener('click', () => {
     playRound(playerSelection, computerSelection);
 })
 
+const choicebtns = document.querySelectorAll(".btn-selections");
+ 
